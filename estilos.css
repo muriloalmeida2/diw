@@ -1,0 +1,240 @@
+*{ 
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-weight: bold;
+}
+
+header{ 
+    background-color: rgba(69, 19, 248, 0.616);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+header img{
+    max-width: 10ch;
+}
+header input{
+    padding: 5px 10px;
+    background-color: rgba(69, 19, 248, 0.616);
+}
+
+a{
+    text-decoration: none;
+    color: black ;
+}
+
+#DESTAQUES{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#DESTAQUES > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+#DESTAQUES .mySlides {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+#DESTAQUES .mySlides > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#DESTAQUES .mySlides > div p {
+    max-width: 70ch;
+    text-align: justify;
+}
+#LANCAMENTOS{
+    max-width: 778px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+#LANCAMENTOS > div{
+    display: flex;
+    gap: 20px;
+    justify-content:space-between;
+    align-items: center;    
+}
+#LANCAMENTOS > div > .Botoes {
+    display: flex;
+    gap: 50px;
+    justify-content:center;
+    align-items: center;  
+}
+#LANCAMENTOS .Cards_lancamento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#LANCAMENTOS .Card_lancamento{
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#LANCAMENTOS .Card_lancamento .Info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#LANCAMENTOS .Carregar_mais{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+#PLATAFORMAS{
+    max-width: 778px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+#PLATAFORMAS .Cards_Plataformas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#PLATAFORMAS .Card_Plataforma{
+    width: 200px;
+    padding: 20px;
+}
+
+#PLATAFORMAS .Card_Plataforma h3{
+    font-weight: bold;
+}
+
+#PLATAFORMAS .Card_Plataforma img{
+    width: 100%;
+}
+
+#PLATAFORMAS .Card_Plataforma a{
+    width: 100%;
+    text-align: right;
+}
+#PLATAFORMAS .Carregar_mais{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+#PUBLISHER{
+    margin-bottom: 20px;
+    background-color: rgba(69, 19, 248, 0.616);
+}
+#PUBLISHER > div{
+    max-width: 778px;
+    margin: 0px auto;
+}
+#PUBLISHER .Cards_Publishers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#PUBLISHER .Card_Publisher{
+    width: 200px;
+    padding: 20px;
+}
+
+#PUBLISHER .Card_Publisher h3{
+    font-weight: bold;
+}
+
+#PUBLISHER .Card_Publisher img{
+    width: 100%;
+}
+
+#PUBLISHER .Card_Publisher a{
+    width: 100%;
+    text-align: right;
+}
+#PUBLISHER .Carregar_mais{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+#SOBRE_NOS {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 778px;
+    margin: 0px auto;
+}
+#SOBRE_NOS > div  p {
+    max-width: 50ch;
+    text-align: justify;
+}
+.cargo{
+    font-weight: bold;
+}
+.icones{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+}
+
+footer{ 
+    background-color:rgba(69, 19, 248, 0.616);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10px;  
+}
+footer .Descricao{ 
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin:auto;    
+}
+footer img{
+    width: 100px;
+}
+
+@media (max-width: 480px){
+    header input, header > div{
+        display: none;
+    }
+    #DESTAQUES iframe{
+        width: 300px;
+        height: 200px;
+    }
+    #DESTAQUES .mySlides{
+        flex-direction: column;
+    }
+
+    #PUBLISHER  .Cards_Publishers{
+        flex-direction: column;
+    }
+
+    .Cards_Plataformas{
+        flex-direction: column;
+    }
+    #SOBRE_NOS{
+        flex-direction: column;
+    }
+}
