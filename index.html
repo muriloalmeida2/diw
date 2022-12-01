@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Jogos</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <img src="logoDetalhes.jpg" alt="logo">
+        <!--link/menu-->
+     <div>
+        <a href=""> Destaques </a>
+        <a href="">/ Criadores /</a>
+        <a href="">Mais jogados /</a>
+        <a href="">Plataformas</a>
+    </div>
+        <!--Barra de pesquisa-->
+    <div id="caixa"> 
+        <input type="text" name="Pesquisa Games" id="barra" onkeyup="pesquisa()">
+        <div id="Resultados"></div> 
+    </div>
+
+    </header>
+
+    <main style="background-color: rgb(213, 187, 236);">
+        <section id="DESTAQUES">
+            <h2>Destaques</h2>
+            <div>
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            </div>
+                
+            </section> 
+            <section id="LANCAMENTOS">
+                <h2>Criadores</h2>
+                <div id="creators">
+                </div>
+        </section>
+ 
+        <section  id="PLATAFORMAS">
+            <h2>TOP 3: Mais jogados</h2>
+            <div class="Cards_Plataformas">
+            </div>   
+        </section>
+
+        <section  id="PUBLISHER">
+            <div>
+                <h2>Plataformas</h2>
+                <div class="Cards_Publishers">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="SOBRE_NOS">
+            <div class="Sobre">
+                <h2>Sobre</h2>
+                <p>
+                    Esse projeto tem como objetivo demonstrar a experiência e habilidade adquirida ao longo do semestre de Desenvolvimento de Sistemas Web.
+                </p>
+            </div>
+            <div class="Editorial">
+                <h2>Informação sobre o autor</h2>
+
+                <div class="perfil_editorial">
+                    <img src="perfil.svg" alt="icone">
+                    <span class="cargo">Aluno:</span>
+                    <span>Murilo Silva de Almeida</span>
+                </div>
+                <div class="perfil_editorial">
+                    <img src="perfil.svg" alt="icone">
+                    <span class="cargo">N° de matrícula:</span>
+                    <span>797343</span>    
+                </div>
+                <div class="perfil_editorial">
+                        <img src="perfil.svg" alt="icone">
+                        <span class="cargo">Curso:</span>
+                        <span>Sistemas de Informação</span> 
+                </div>
+                
+                <div class="Redes_Sociais">
+                    <h3>Redes Sociais</h3>
+                    <div class="icones">
+                        <img src="instagram.svg" alt="icone"></a>  
+                        <img src="facebook.svg" alt="icone"></a>
+                        <img src="whatsapp.svg" alt="icone"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>   
+
+    <footer>
+        <span class="Descricao">Copyrigth 2022 - Desenvolvimento de Interfaces Web - ICEI PUC MINAS </span>
+        
+        <img src="logoDetalhes.jpg" alt="logo">
+        
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "flex";  
+          dots[slideIndex-1].className += "w3-white";
+        }
+    </script>
+    
+</body>
+
+
+</html>
